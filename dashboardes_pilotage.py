@@ -13,7 +13,7 @@ import re
 ##os.chdir(r"C:\Users\HZXH9786\Downloads\old_pilotage_b2b")
 
 
-url = "C:/Users/DTDS3300/Desktop/Orange/Fichier_Formulaire/base_dashboard.xlsx"
+url = "base_dashboard.xlsx"
 commerciaux_cpt = pd.read_excel(url, sheet_name="commerciaux_cpt")
 commerciaux_sgt = pd.read_excel(url, sheet_name="commerciaux_sgt")
 Support = pd.read_excel(url, sheet_name="Support")
@@ -74,9 +74,7 @@ def main():
             
             
         if signal23==2:    
-            
-            
-        
+                    
               l1=val_filtre(commerciaux_sgt, commercial,'Commerciaux', 'Segment')
               segment=l1[0]
               #segment=st.sidebar.selectbox('Segment**',l1)  
